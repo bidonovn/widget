@@ -1,0 +1,147 @@
+.discount
+  padding-top: 80px
+  &-block
+    &__item
+      width: 100%
+      background-color: #F5F5F5
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      height: 400px
+      border-radius: 24px
+      position: relative
+      margin-bottom: 120px
+    &__image
+      display: flex
+      justify-content: flex-start
+      width: 45%
+      position: absolute
+      top: 0
+      right: 0
+      img
+        width: 100%
+      &.hide
+        display: none
+    &__text
+      margin-left: 40px
+      width: 55%
+    &__title
+      font-family: 'Rubrick New Bold', sans-serif
+      font-weight: 700
+      font-size: 32px
+      line-height: 40px
+      color: #2c2c2c
+      margin-bottom: 55px
+      display: block
+    &__subtitle
+      font-family: 'Roboto', sans-serif
+      font-weight: 400
+      font-size: 18px
+      line-height: 28px
+      color: #2c2c2c
+      width: 100%
+      display: inline-block
+    &__items
+      margin-top: 40px
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding-bottom: 120px
+    &__sell
+      display: flex
+      flex-direction: row
+      background-color: #F5F5F5
+      margin-right: 30px
+      border-radius: 24px
+      align-items: center
+      &:last-child
+        margin-right: 0
+    &__about
+      display: block
+      margin-left: 15px
+      font-family: 'Roboto', sans-serif
+      font-weight: 500
+      font-size: 18px
+      line-height: 28px
+    &__wrap
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      width: 100%
+    &__imag3
+      display: none
+
+@media (max-width: 1150px)
+  .discount
+    &-block
+      &__img
+        width: 100%
+        img
+          width: 100%
+      &__about
+        padding: 10px 0px 10px 10px 
+      &__text
+        width: 60%
+
+@media (max-width: 930px)
+  .discount
+    &-block
+      &__item
+        height: 300px
+      &__title
+        margin-bottom: 30px
+      &__text
+        width: 47%
+      &__image
+        width: 45%
+@media (max-width: 880px)
+  .discount
+    &-block
+      &__items
+        flex-direction: column
+        margin-bottom: 30px
+      &__sell
+        width: 100%
+        justify-content: space-between
+        margin-bottom: 15px
+        margin-right: 0
+      &__img
+        width: 30%
+      &__image
+        display: none
+      &__imag3
+        display: block
+        width: 50%
+        img
+          width: 100%
+      &__item
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: auto
+      &__text
+        margin-left: 0
+        width: 90%
+        text-align: center
+        padding-bottom: 20px
+
+@media (max-width: 550px)
+  .discount
+    &-block
+      &__title
+        font-size: 24px
+        line-height: 32px
+      &__subtitle
+        font-size: 16px
+        line-height: 24px
+      &__about
+        font-size: 16px
+        line-height: 24px
+      &__imag3
+        width: 70%
+      &__items
+        padding-bottom: 40px
+      &__item
+        margin-bottom: 60px

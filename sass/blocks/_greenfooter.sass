@@ -1,0 +1,71 @@
+.greenfooter 
+  border-radius: 40px 40px 0px 0px 
+  background: linear-gradient(225deg, #60DD43 0%, #22BE54 49.16%, #07A760 100%)
+  &-block
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    position: relative
+    &__image
+      width: 50%
+      display: flex
+      justify-content: flex-end
+      img
+        width: 100%
+    &__name
+      font-family: 'Rubrick New Bold', sans-serif
+      font-weight: 500
+      font-size: 48px
+      line-height: 60px
+      color: #202326
+      margin-bottom: 24px
+      display: block
+    &__text
+      width: 45%
+
+@media (max-width: 1050px)
+  .greenfooter
+    &-block
+      height: 100%
+      &__name
+        font-size: 40px
+        line-height: 45px
+      &__text
+        width: 55%
+        margin-top: 40px
+        margin-bottom: 70px
+      &__image
+        position: absolute
+        bottom: 0
+        right: 0
+        img
+          object-fit: contain
+          height: 100%
+@media (max-width: 750px)
+  .greenfooter
+    &-block
+      flex-direction: column
+      &__text
+        width: 100%
+        text-align: center
+        margin-bottom: 10px
+      &__image
+        position: static
+  .hero-block__app
+    justify-content: center
+@media (max-width: 640px)
+  .greenfooter
+    &-block
+      &__image
+        right: 60px
+        width: 70%
+@media (max-width: 475px)
+  .greenfooter
+    &-block
+      &__name
+        font-size: 32px
+        line-height: 40px
+      &__image
+        width: 90%
+        right: 15px

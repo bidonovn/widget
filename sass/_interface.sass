@@ -1,0 +1,96 @@
+*
+  box-sizing: border-box
+  outline: 0 !important
+  margin: 0
+  padding: 0
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-text-size-adjust: 100%
+  outline-offset: 0 !important
+  opacity: 1
+.wrap
+  width: 1200px
+  margin: 0 auto
+.title
+  font-family: "Rubrick New Bold", sans-serif
+  font-weight: 700
+  font-size: 32px
+  line-height: 40px
+  color: #2C2C2C
+  display: flex
+  justify-content: center
+  &.green
+    color: #19AB4A
+    padding: 24px 40px 24px 40px
+    box-shadow: 0px 0px 40px rgba(138, 138, 138, 0.16)
+    border-radius: 10px
+    display: inline-block
+.text-field__title
+  font-family: 'Inter Regular', sans-serif !important
+  font-weight: 400
+.main-title
+  font-family: 'Rubrick New Bold', sans-serif
+  font-weight: 700
+  font-size: 30px
+  line-height: 36px
+  color: #171717
+.text
+  font-family: 'Roboto', sans-serif
+  font-size: 18px
+  line-height: 28px
+  color: #6A6A6A
+.wrap-title
+  display: flex
+  justify-content: center
+  padding-top: 90px
+.rotate-90
+  transform: rotate(180deg)
+.content
+  border-radius: 40px 40px 0px 0px 
+  background-color: #fff
+.white-block
+  height: 40px
+  background-color: #fff
+  border-radius: 40px 40px 0px 0px
+.line
+  height: 2px
+  background-color: #E8E8E8
+  width: 100%
+.main-container.container
+  margin-bottom: 120px
+@media(max-width: 1250px)
+  .wrap
+    width: 90%
+@media(max-width: 650px)
+  .main-container.container
+    margin-bottom: 60px
+@media(max-width: 750px)
+  .title
+    font-size: 24px
+    line-height: 32px
+@media(max-width: 550px)
+  .title.green
+    padding: 16px 48px 16px 48px
+    text-align: center
+    width: 90%
+  .wrap-title
+    padding-top: 40px
+@media (min-width: 992px)
+  html,
+  body
+    scrollbar-color: #d6d6d6 #F4F5F8
+    scrollbar-width: thin
+    &::-webkit-scrollbar
+      width: 5px
+      height: 8px
+      background-color: #F4F5F8
+    &::-webkit-scrollbar-thumb
+      background-color: #d6d6d6
+      border-radius: 3px
+  .hero-block__link:hover
+    transform: translateY(-5px)
+    transition: 0.5s
+  .information-block__about:hover
+    text-decoration: underline
+    transition: 0.5s

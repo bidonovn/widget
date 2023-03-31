@@ -1,0 +1,49 @@
+.information
+  margin-bottom: 120px
+  &-block
+    &__title
+      font-family: 'Rubrick New Bold', sans-serif
+      font-weight: 700
+      font-size: 32px
+      line-height: 40px
+      color: #2c2c2c
+      display: block
+      margin-top: 120px
+      margin-bottom: 60px
+    &__items
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+    &__item
+      display: flex
+      flex-direction: row
+      align-items: center
+    &__image
+      margin-right: 25px
+    &__about
+      font-family: 'Roboto', sans-serif
+      font-weight: 400
+      font-size: 14px
+      line-height: 20px
+      color: #2B82E9
+      transition: 0.5s
+@media (max-width: 920px)
+  .information
+    &-block
+      &__items
+        a
+          width: 48%
+
+@media (max-width: 650px)
+  .information
+    margin-bottom: 60px
+    &-block
+      &__items
+        flex-direction: column
+        a
+          width: 100%
+          margin-bottom: 20px
+      &__title
+        margin-top: 40px
+        margin-bottom: 30px
